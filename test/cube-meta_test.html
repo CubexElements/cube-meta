@@ -101,43 +101,45 @@
       assert.equal(meta2.value, 'test3');
     });
 
-   /* test('check undefined does not override', function ()
-    {
-      var
-        fix = fixture('MetaPropertyFixture'),
-        meta1 = fix[0],
-        meta2 = fix[1];
+    /**
+     test('check undefined does not override', function ()
+     {
+       var
+         fix = fixture('MetaPropertyFixture'),
+         meta1 = fix[0],
+         meta2 = fix[1];
 
-      assert.equal(meta1.key, 'meta_key');
-      assert.equal(meta1.value, 'test');
+       assert.equal(meta1.key, 'meta_key');
+       assert.equal(meta1.value, 'test');
 
-      assert.equal(meta2.key, 'meta_key');
-      assert.equal(meta2.value, 'test');
+       assert.equal(meta2.key, 'meta_key');
+       assert.equal(meta2.value, 'test');
 
-      meta1.value = 'test3';
+       meta1.value = 'test3';
 
-      assert.equal(meta1.value, 'test3');
-      assert.equal(meta2.value, 'test3');
-    });
+       assert.equal(meta1.value, 'test3');
+       assert.equal(meta2.value, 'test3');
+     });
 
-    test('check property does override', function ()
-    {
-      var
-        fix = fixture('MetaPropertyFixture', {myprop: ''}),
-        meta1 = fix[0],
-        meta2 = fix[1];
+     test('check property does override', function ()
+     {
+       var
+         fix = fixture('MetaPropertyFixture', {myprop: ''}),
+         meta1 = fix[0],
+         meta2 = fix[1];
 
-      assert.equal(meta1.key, 'meta_key');
-      assert.equal(meta1.value, '');
+       assert.equal(meta1.key, 'meta_key');
+       assert.equal(meta1.value, '');
 
-      assert.equal(meta2.key, 'meta_key');
-      assert.equal(meta2.value, '');
+       assert.equal(meta2.key, 'meta_key');
+       assert.equal(meta2.value, '');
 
-      meta1.value = 'test3';
+       meta1.value = 'test3';
 
-      assert.equal(meta1.value, 'test3');
-      assert.equal(meta2.value, 'test3');
-    });*/
+       assert.equal(meta1.value, 'test3');
+       assert.equal(meta2.value, 'test3');
+     });
+     */
   });
 </script>
 
