@@ -20,9 +20,16 @@
 
         attached: function ()
                   {
-                    if(this.key && this.value === undefined)
+                    if(this.key)
                     {
-                      this.value = this.default;
+                      if(this._meta[this.key] !== undefined)
+                      {
+                        this.value = this._meta[this.key];
+                      }
+                      else if(this.key && this.value === undefined)
+                      {
+                        this.value = this.default;
+                      }
                     }
                   },
 
